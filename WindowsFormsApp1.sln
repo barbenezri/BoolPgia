@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameUI", "GameUI.csproj", "{C9D100FE-9AC1-4B0F-9C8D-44D7F7BEFCCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoolPgia", "..\BoolPgia\BoolPgia.csproj", "{032CEF36-F580-4462-ADD6-C58BA9916E44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9D100FE-9AC1-4B0F-9C8D-44D7F7BEFCCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D100FE-9AC1-4B0F-9C8D-44D7F7BEFCCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D100FE-9AC1-4B0F-9C8D-44D7F7BEFCCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D100FE-9AC1-4B0F-9C8D-44D7F7BEFCCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{032CEF36-F580-4462-ADD6-C58BA9916E44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{032CEF36-F580-4462-ADD6-C58BA9916E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{032CEF36-F580-4462-ADD6-C58BA9916E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{032CEF36-F580-4462-ADD6-C58BA9916E44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F80B873-B231-48D0-BE44-CA846566B83D}
+	EndGlobalSection
+EndGlobal
