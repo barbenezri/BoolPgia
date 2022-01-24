@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -12,23 +6,27 @@ namespace WindowsFormsApp1
     public partial class InitialForm : Form
     {
         private int m_DesireGuessAmount = 4;
-        public int DesireGuessAmount { get => m_DesireGuessAmount; set => m_DesireGuessAmount = value; }
+
+        public int DesireGuessAmount 
+        {
+            get => m_DesireGuessAmount; set => m_DesireGuessAmount = value;
+        }
+        
         public InitialForm()
         {
             InitializeComponent();
         }
 
-
-        private void ChancesAmount_btn_Click(object sender, EventArgs e)
+        private void ChangesGuessAmount_Click(object sender, EventArgs e)
         {
-            m_DesireGuessAmount = m_DesireGuessAmount == 10 ? 4 : m_DesireGuessAmount + 1;
-            ChancesAmount_btn.Text = $"Number of chances: {m_DesireGuessAmount}";
+            DesireGuessAmount = DesireGuessAmount == 10 ? 4 : DesireGuessAmount + 1;
+            ChancesAmount.Text = $"Number of chances: {DesireGuessAmount}";
         }
 
-        private void Start_btn_Click(object sender, EventArgs e)
+        private void Start_Click(object sender, EventArgs e)
         {
-            this.Close();
-
+            DialogResult = DialogResult.OK;
+            Close();
         }
     }
 }

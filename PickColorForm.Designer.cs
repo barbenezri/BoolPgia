@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    public partial class GameForm
+    public partial class PickColorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -27,14 +27,6 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
-            components = new System.ComponentModel.Container();
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(800, 500);
-            Text = "GameForm";
-        }
-
         #endregion
     }
 }

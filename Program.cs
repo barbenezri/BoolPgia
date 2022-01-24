@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    static class Program
+    public static class Program
     {
         [STAThread]
         public static void Main()

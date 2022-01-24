@@ -1,7 +1,6 @@
-﻿
-namespace WindowsFormsApp1
+﻿namespace WindowsFormsApp1
 {
-    partial class InitialForm
+    public partial class InitialForm
     {
         /// <summary>
         /// Required designer variable.
@@ -18,6 +17,7 @@ namespace WindowsFormsApp1
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -29,47 +29,45 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.ChancesAmount_btn = new System.Windows.Forms.Button();
-            this.Start_btn = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            ChancesAmount = new System.Windows.Forms.Button();
+            Start_btn = new System.Windows.Forms.Button();
+            SuspendLayout();
             // 
             // ChancesAmount_btn
             // 
-            this.ChancesAmount_btn.Location = new System.Drawing.Point(36, 30);
-            this.ChancesAmount_btn.Name = "ChancesAmount_btn";
-            this.ChancesAmount_btn.Size = new System.Drawing.Size(264, 43);
-            this.ChancesAmount_btn.TabIndex = 0;
-            this.ChancesAmount_btn.Text = "Number of chances: 4";
-            this.ChancesAmount_btn.UseVisualStyleBackColor = true;
-            this.ChancesAmount_btn.Click += new System.EventHandler(this.ChancesAmount_btn_Click);
+            ChancesAmount.Location = new System.Drawing.Point(36, 30);
+            ChancesAmount.Name = "ChancesAmount_btn";
+            ChancesAmount.Size = new System.Drawing.Size(264, 43);
+            ChancesAmount.TabIndex = 0;
+            ChancesAmount.Text = "Number of chances: 4";
+            ChancesAmount.UseVisualStyleBackColor = true;
+            ChancesAmount.Click += new System.EventHandler(ChangesGuessAmount_Click);
             // 
             // Start_btn
             // 
-            this.Start_btn.Location = new System.Drawing.Point(206, 118);
-            this.Start_btn.Name = "Start_btn";
-            this.Start_btn.Size = new System.Drawing.Size(94, 34);
-            this.Start_btn.TabIndex = 1;
-            this.Start_btn.Text = "Start";
-            this.Start_btn.UseVisualStyleBackColor = true;
-            this.Start_btn.Click += new System.EventHandler(this.Start_btn_Click);
+            Start_btn.Location = new System.Drawing.Point(206, 118);
+            Start_btn.Name = "Start_btn";
+            Start_btn.Size = new System.Drawing.Size(94, 34);
+            Start_btn.TabIndex = 1;
+            Start_btn.Text = "Start";
+            Start_btn.UseVisualStyleBackColor = true;
+            Start_btn.Click += new System.EventHandler(Start_Click);
             // 
             // InitialForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 178);
-            this.Controls.Add(this.Start_btn);
-            this.Controls.Add(this.ChancesAmount_btn);
-            this.Name = "InitialForm";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(336, 178);
+            Controls.Add(Start_btn);
+            Controls.Add(ChancesAmount);
+            Name = "InitialForm";
+            Text = "Bool Pgia";
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.Button ChancesAmount_btn;
+        private System.Windows.Forms.Button ChancesAmount;
         private System.Windows.Forms.Button Start_btn;
     }
 }
-
